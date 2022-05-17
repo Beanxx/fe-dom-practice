@@ -6,7 +6,7 @@ let elPassword = document.querySelector("#password");
 let elRePassword = document.querySelector("#password-retype");
 let elPasswordMessage = document.querySelector(".mismatch-message");
 
-// 아이디 입력란에 키보드가 눌렸을 때
+// 아이디 입력란에 키보드가 눌렸을 때 실행
 elInputUsername.onkeyup = function () {
   console.log(elInputUsername.value);
   // isMoreThan4Length 함수가 true일 때
@@ -26,7 +26,7 @@ elInputUsername.onkeyup = function () {
   }
 };
 
-// 비밀번호 확인 입력란에 키보드가 눌렸을 때
+// 비밀번호 확인 입력란에 키보드가 눌렸을 때 실행
 elRePassword.onkeyup = function () {
   // isMatch 함수가 true일 때
   if (isMatch(elPassword.value, elRePassword.value)) {
